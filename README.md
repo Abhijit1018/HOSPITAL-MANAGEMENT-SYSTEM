@@ -1,6 +1,3 @@
-# HOSPITAL-MANAGEMENT-SYSTEM
-
----
 
 # 🏥 Hospital Management System
 

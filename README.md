@@ -1,5 +1,4 @@
 # HOSPITAL-MANAGEMENT-SYSTEM
-Here’s an updated version of the `README.md` for your **Hospital Management System** that uses **Python**, **Django**, and **MongoDB**:
 
 ---
 

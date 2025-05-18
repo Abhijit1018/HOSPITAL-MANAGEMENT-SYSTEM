@@ -1,0 +1,103 @@
+{% extends 'navigation.html' %}
+{% load static %}
+{% block body %}
+
+<div class="container-fluid">
+    <!-- Hero Section -->
+    <div class="jumbotron text-center py-5" style="background-image: url('{% static 'images/h3.jpg' %}'); background-size: cover; background-position: center; min-height: 500px; position: relative;">
+        <div class="overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5);"></div>
+        <div class="container position-relative" style="z-index: 1;">
+            <h1 class="display-4 text-white mb-4">Welcome to Hospital Management System</h1>
+            <p class="lead text-white">Providing quality healthcare services with compassion and excellence</p>
+            <hr class="my-4 bg-white">
+            <p class="text-white">"A hospital alone shows what war is."</p>
+            <a class="btn btn-primary btn-lg" href="{% url 'contact' %}" role="button">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="{% static 'images/h1.jpg' %}" class="card-img-top" alt="Emergency Care">
+                    <div class="card-body">
+                        <h5 class="card-title">Emergency Care</h5>
+                        <p class="card-text">24/7 emergency medical services with state-of-the-art facilities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="{% static 'images/h2.jpg' %}" class="card-img-top" alt="Specialized Treatment">
+                    <div class="card-body">
+                        <h5 class="card-title">Specialized Treatment</h5>
+                        <p class="card-text">Expert doctors providing specialized medical care across various departments.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="{% static 'images/h4.png' %}" class="card-img-top" alt="Patient Care">
+                    <div class="card-body">
+                        <h5 class="card-title">Patient Care</h5>
+                        <p class="card-text">Comprehensive patient care with modern medical facilities and compassionate staff.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose Us Section -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Why Choose Us</h2>
+            <div class="row">
+                <div class="col-md-3 text-center mb-4">
+                    <i class="fas fa-user-md fa-3x text-primary mb-3"></i>
+                    <h4>Expert Doctors</h4>
+                    <p>Highly qualified and experienced medical professionals</p>
+                </div>
+                <div class="col-md-3 text-center mb-4">
+                    <i class="fas fa-hospital fa-3x text-primary mb-3"></i>
+                    <h4>Modern Facilities</h4>
+                    <p>State-of-the-art medical equipment and facilities</p>
+                </div>
+                <div class="col-md-3 text-center mb-4">
+                    <i class="fas fa-clock fa-3x text-primary mb-3"></i>
+                    <h4>24/7 Service</h4>
+                    <p>Round-the-clock medical care and emergency services</p>
+                </div>
+                <div class="col-md-3 text-center mb-4">
+                    <i class="fas fa-heart fa-3x text-primary mb-3"></i>
+                    <h4>Patient Care</h4>
+                    <p>Compassionate care and attention to every patient</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .jumbotron {
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+    .card {
+        transition: transform 0.3s;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .card:hover {
+        transform: translateY(-5px);
+    }
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+    .text-primary {
+        color: #007bff !important;
+    }
+</style>
+
+{% endblock %}

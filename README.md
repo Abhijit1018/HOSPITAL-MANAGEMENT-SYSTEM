@@ -151,7 +151,6 @@ This project is licensed under the MIT License.
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to fork the repository and submit pull requests.
 
 ---
 
